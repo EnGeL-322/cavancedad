@@ -1,13 +1,12 @@
 server:
-  port: 9091
+  port: 9090
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8092/eureka}
+      defaultZone: http://localhost:8090/eureka
   instance:
-    #hostname: localhost
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: localhost
 
 spring:
   application:
